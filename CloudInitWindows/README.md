@@ -31,7 +31,6 @@ With the hardware changes applied, Open the VNC console to the Windows machine a
             <PlainText>true</PlainText>
         </AdministratorPassword>
       </UserAccounts>
-
 ```
 
 - Click "Finish" to apply the sysprep changes.
