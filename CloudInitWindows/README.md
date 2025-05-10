@@ -40,12 +40,14 @@ With the hardware changes applied, Open the VNC console to the Windows machine a
 Wait for the sysprep to complete - you can now convert the VM to a VM template if you wish.
 - Apply the cloud-init settings as normal.
 - Make sure to use the "Administrator" user and same password as specified in the unattend.xml file.
-- Start up the VM / clone
+- Start up the VM / clone to a new VM and start it up.
 
 Note: Further settings can be applied using the unattend.xml answer file (including additional users) - the Assessment and Deployment Toolkit by Microsoft contains more information on this.
 
+Assessment and Deployment Toolkit:
+
 [https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install)
 
-Cloudbase-Init documentation pages
+Cloudbase-Init documentation pages:
 
 [https://cloudbase-init.readthedocs.io/en/latest/index.html](https://cloudbase-init.readthedocs.io/en/latest/index.html)
