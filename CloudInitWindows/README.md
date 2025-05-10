@@ -22,9 +22,19 @@ With the hardware changes applied, Open the VNC console to the Windows machine a
 - Tick run as localsystem.
 - Wait for install to run - do not click Finish yet.
 - Open the C:\Program Files\Cloudbase Solutions\Cloudbase-Init\conf\unattend.xml in notepad.
-- Add the Administrator password section to the "oobeSystem" pass "Microsoft-Windows-Shell-Setup" section, eg:
-- Click "Finish" to apply the sysprep changes.
+- Add the Administrator password section to the "oobeSystem" pass "component Microsoft-Windows-Shell-Setup" section, eg:
 
+```
+      <UserAccounts>
+        <AdministratorPassword>
+            <Value>Password123</Value>
+            <PlainText>true</PlainText>
+        </AdministratorPassword>
+      </UserAccounts>
+
+```
+
+- Click "Finish" to apply the sysprep changes.
 
 
 Wait for the sysprep to complete - you can now convert the VM to a VM template if you wish.
@@ -35,5 +45,7 @@ Wait for the sysprep to complete - you can now convert the VM to a VM template i
 Note: Further settings can be applied using the unattend.xml answer file (including additional users) - the Assessment and Deployment Toolkit by Microsoft contains more information on this.
 
 [https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install)
+
+Cloudbase-Init documentation pages
 
 [https://cloudbase-init.readthedocs.io/en/latest/index.html](https://cloudbase-init.readthedocs.io/en/latest/index.html)
