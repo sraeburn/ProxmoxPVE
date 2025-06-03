@@ -1,10 +1,12 @@
-# Cloudbase-Init for Windows for Proxmox
+# Cloudbase-Init for Windows on Proxmox
 
 If you have attempted to use Cloudbase-Init / Cloud-Init on Windows for Proxmox, you have probably encountered problems with the password values not being successfully applied to the deployed machine.
 
 If you are using the Administrator password, then the password from Cloud-Init is not successfully set and needs to be set on startup.
 
-The steps described here provide a workaround. The full process is as follows:
+The steps described here provide a workaround, and a video demonstration can be found [here](https://youtu.be/2T5Rf64TZyo). 
+
+The full process is as follows:
 
 - Create your Windows VM.
 - Install drivers (VirtIO etc)

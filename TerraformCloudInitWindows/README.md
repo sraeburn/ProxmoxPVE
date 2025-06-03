@@ -14,3 +14,5 @@ The main.tf file should be configured with hardware to match the Proxmox templat
 - Make sure the correct template name is specified.
 - The usual proxmox config / node placement options apply as normal.
 - The ciuser and cipassword should be set as per the unattend.xml file as already mentioned.
+
+A video demonstration can be found [here](https://youtu.be/Ix-CCuKHBB0).
